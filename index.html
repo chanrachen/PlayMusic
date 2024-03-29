@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="musicPlayer">
+            <nav>
+                <div class="cicle">
+                <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="cicle">
+                <i class="fa-solid fa-bars"></i>  
+                </div>
+            </nav>
+            <img src="dfe4aa0f903a0509c58f12b6b66f830d.jpg" class="imgSong">
+            <div class="container-nameSinger">
+            <div class="NameSinger">
+            <h3>FE!N(feat.Cel!!)</h3>
+            <h5>Travis Scott</h5>
+            </div>
+            <div class="icon-2">
+                <i class="fa-solid fa-circle-minus"></i>
+                <i class="fa-solid fa-circle-plus"></i>
+            </div>
+            </div>
+            <audio id="song">
+                <source src="travis-scott-fe-n-lyrics-ft-playboi-carti-(mp3convert.org).mp3"  type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controll">
+                <div class="play"><i class="fa-solid fa-backward-step"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-circle-play" id="CrtIcon"></i></div>
+                <div class="play"><i class="fa-solid fa-forward-step"></i></div>
+            </div>
+    </div>
+    <script src="JS.js"></script>
+</body>
+</html>
